@@ -1,0 +1,41 @@
+.container {
+    background: #6d67d0;
+    border-radius: 10px;
+    
+    display: flex;
+    gap: 1.2rem;
+    padding: 4rem;
+}
+
+.day{
+    flex: 1;
+    
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+
+h4.title {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #dad8f7;
+}
+
+.maxmin {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.maxmin span {
+    color: #c2bff4;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        grid-column: 2/4;
+    }
+
+}

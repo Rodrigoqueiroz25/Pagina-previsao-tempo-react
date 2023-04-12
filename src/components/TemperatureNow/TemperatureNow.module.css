@@ -1,0 +1,128 @@
+  
+.container{
+    background: url(../../assets/bg-temp-now.jpeg);
+    /* backdrop-filter: blur(1rem); */
+    border-radius: 1rem;
+        
+    /* width: 48rem;
+    height: 48rem;         */
+    position: relative;
+    
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    
+}
+
+.container::before {
+    content: "";
+    width: 17.6rem;
+    height: 17.6rem;
+    background: url(../../assets/clouds.svg) no-repeat;
+    position: absolute;
+    top: -5.6rem;
+    left: -5.6rem;
+}
+  
+.localization{
+    box-sizing: border-box;
+    
+    justify-self: end;
+    padding: 3.2rem 3.2rem 0;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.localization strong {
+    font-size: 1.4rem;
+    color: #c2bff4;
+}
+
+.temp{
+    color: white;
+    font-weight: 700;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 0.4rem;
+    
+    padding-top: 6rem;   
+}
+
+.number{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.4rem;
+    font-size: 8.8rem;
+    margin-left: 2rem;
+}
+
+.number::after {
+    content: "ºC";
+  
+    font-size: 2.4rem;
+    margin-top: 1.5rem;
+  
+    color: #dad8f7;
+}
+
+.temp .minmax{
+    font-size: 2rem;
+}
+
+.temp .minmax span{
+    color: #c2bff4;
+}
+
+.statistics{
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+}
+
+.stats {
+    flex: 1;
+    padding: 1.2rem 1.6rem;
+    background: rgba(102, 96, 200, 0.6);
+    border-radius: 0.6rem;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.stats .info {
+    color: #e7e6fb;
+}
+
+.stats .info h5 {
+    font-size: 1.8rem;
+  
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+}
+
+.stats .info p {
+    font-size: 1.2rem;
+}
+
+.stats .info h5 span{
+    font-size: 1.2rem;
+}
+
+
+@media (min-width: 1200px) {
+    .container{
+        grid-row: 1/3;
+    }
+
+}

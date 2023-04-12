@@ -1,0 +1,57 @@
+
+.container{
+    background: #6d67d0;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    
+    display: grid;
+}
+
+.title{
+    font-size: 1.6rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dad8f7;
+    gap: 0.8rem;
+    
+    margin-top: 3.2rem;
+}
+
+.avaliation{
+    font-size: 1.8rem;
+    color: #87ebcd;
+    margin-top: 3.2rem;
+}
+
+.number {
+    margin-top: 0.4rem;
+    font-size: 4rem;
+    color: #e7e6fb;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 3.3rem;
+    padding: 0 1.6rem 1.6rem;
+    
+}
+
+.infonumber{
+    flex: 1;
+}
+
+.infonumber p{
+    font-size: 1.4rem;
+    color: #87ebcd;
+}
+
+.infonumber small {
+    font-size: 1.2rem;
+    color: #e7e6fb;
+}
